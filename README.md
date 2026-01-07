@@ -2,8 +2,8 @@
 
 **Sistem Informasi Pelaporan Persandian dan Statistik**
 
-![Laravel](https://img.shields.io/badge/Laravel-12. x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.3+-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
@@ -47,7 +47,7 @@ SIPANDIK adalah platform terintegrasi untuk pelaporan kerentanan/bug pada aplika
 
 | Layer | Teknologi |
 |-------|-----------|
-| **Backend** | Laravel 12.x, PHP 8.2+ |
+| **Backend** | Laravel 12.x, PHP 8.3+ |
 | **Frontend** | Blade, TailwindCSS, Alpine.js |
 | **Build Tool** | Vite |
 | **Database** | MySQL / SQLite |
@@ -59,7 +59,7 @@ SIPANDIK adalah platform terintegrasi untuk pelaporan kerentanan/bug pada aplika
 ## 📦 Instalasi
 
 ### Prasyarat
-- PHP >= 8.2
+- PHP >= 8.3
 - Composer
 - Node.js & NPM
 - MySQL atau SQLite
@@ -122,7 +122,7 @@ SIPANDIK adalah platform terintegrasi untuk pelaporan kerentanan/bug pada aplika
 | Role | Email | Password |
 |------|-------|----------|
 | Admin | admin@sipandik.local | password |
-| User | user@sipandik.local | password |
+| User | user@sipandik. local | password |
 
 > ⚠️ **Penting**: Ganti password default sebelum deploy ke production!
 
@@ -150,7 +150,7 @@ sipandik/
 │   ├── css/              # Stylesheets
 │   └── js/               # JavaScript
 ├── routes/
-│   ├── web.php           # Web routes
+│   ├── web. php           # Web routes
 │   └── auth.php          # Authentication routes
 └── tests/                # Test suites
 ```
@@ -241,7 +241,7 @@ Pastikan mengkonfigurasi `.env` untuk production:
 ```env
 APP_ENV=production
 APP_DEBUG=false
-APP_URL=https://sipandik.yourdomain.go.id
+APP_URL=https://sipandik.yourdomain. go.id
 
 DB_CONNECTION=mysql
 DB_HOST=your-db-host

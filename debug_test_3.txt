@@ -1,0 +1,96 @@
+
+   PASS  Tests\Unit\ExampleTest
+  Γ£ô that trueΓÇª 0.01s  
+
+   FAIL  Tests\Feature\BugReportTest
+  Γ£ô it prevenΓÇª 0.86s  
+  Γ£ô user canΓÇª  0.07s  
+  Γ¿» user canΓÇª  0.03s  
+  Γ¿» user cannΓÇª 0.02s  
+  Γ¿» admin canΓÇª 0.02s  
+
+   FAIL  Tests\Feature\DataRequestTest
+  Γ¿» user canΓÇª  0.03s  
+  Γ£ô admin canΓÇª 0.07s  
+  Γ£ô user canΓÇª  0.03s  
+
+   PASS  Tests\Feature\ExampleTest
+  Γ£ô the appliΓÇª 0.02s  
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+  ΓÇª  QueryException   
+  SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: vulnerability_types.kode (Connection: sqlite, Database: database/testing.sqlite, SQL: insert into "vulnerability_types" ("nama", "deskripsi", "level", "urutan", "is_active", "id", "updated_at", "created_at") values (unde quia dolores, Unde modi aut natus quasi nam., high, 9, 1, 019b96e0-6684-72af-af3c-d51b492be723, 2026-01-07 05:14:07, 2026-01-07 05:14:07))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+    573Γûò             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574Γûò 
+    575Γûò             $this->recordsHaveBeenModified();
+    576Γûò 
+  Γ₧£ 577Γûò             return $statement->execute();
+    578Γûò         });
+    579Γûò     }
+    580Γûò 
+    581Γûò     /**
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+  ΓÇª  QueryException   
+  SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: vulnerability_types.kode (Connection: sqlite, Database: database/testing.sqlite, SQL: insert into "vulnerability_types" ("nama", "deskripsi", "level", "urutan", "is_active", "id", "updated_at", "created_at") values (consequatur dolores ex, Et doloribus quia praesentium dolore., medium, 7, 1, 019b96e0-66a1-711b-9c3c-b388d02c5756, 2026-01-07 05:14:07, 2026-01-07 05:14:07))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+    573Γûò             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574Γûò 
+    575Γûò             $this->recordsHaveBeenModified();
+    576Γûò 
+  Γ₧£ 577Γûò             return $statement->execute();
+    578Γûò         });
+    579Γûò     }
+    580Γûò 
+    581Γûò     /**
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+  ΓÇª  QueryException   
+  SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: vulnerability_types.kode (Connection: sqlite, Database: database/testing.sqlite, SQL: insert into "vulnerability_types" ("nama", "deskripsi", "level", "urutan", "is_active", "id", "updated_at", "created_at") values (assumenda inventore quasi, Vero velit molestiae minus praesentium nesciunt et culpa., medium, 9, 1, 019b96e0-66b6-72cc-8950-e5a14ea58498, 2026-01-07 05:14:07, 2026-01-07 05:14:07))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+    573Γûò             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574Γûò 
+    575Γûò             $this->recordsHaveBeenModified();
+    576Γûò 
+  Γ₧£ 577Γûò             return $statement->execute();
+    578Γûò         });
+    579Γûò     }
+    580Γûò 
+    581Γûò     /**
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+   FAILED  Tests\FΓÇª   
+  Failed asserting that a row in the table [data_requests] matches the attributes {
+    "nama_data": "Data Kependudukan",
+    "user_id": "019b96e0-66ca-7353-9b84-6168416d81dc"
+}.
+
+The table is empty.
+
+  at tests\Feature\DataRequestTest.php:26
+     22Γûò         'format_data' => ['excel', 'pdf'],
+     23Γûò     ]);
+     24Γûò 
+     25Γûò     $response->assertRedirect();
+  Γ₧£  26Γûò     $this->assertDatabaseHas('data_requests', [
+     27Γûò         'nama_data' => 'Data Kependudukan',
+     28Γûò         'user_id' => $user->id,
+     29Γûò     ]);
+     30Γûò });
+
+
+  Tests:    4 failed, 6 passed (10 assertions)
+  Duration: 1.36s
+

@@ -1,0 +1,19 @@
+/* Header */
+.header {
+    background-color: #1e40af; /* Warna SIPANDIK */
+    padding: 25px;
+    text-align: center;
+}
+
+/* Button Primary */
+.button-primary {
+    background-color: #1e40af;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f3f4f6;
+    text-align: center;
+    padding: 20px;
+}

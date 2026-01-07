@@ -1,0 +1,68 @@
+
+   FAIL  Tests\Feature\BugReportTest
+  ✓ it preven… 0.33s  
+  ✓ user can…  0.07s  
+  ⨯ user can…  0.03s  
+  ⨯ user cann… 0.02s  
+  ⨯ admin can… 0.02s  
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: opd.kode (Connection: sqlite, Database: :memory:, SQL: insert into "opd" ("nama", "singkatan", "alamat", "telepon", "email", "website", "is_active", "id", "updated_at", "created_at") values (Swaniawski Group, quia, 38596 Pfeffer Inlet
+South Alfordshire, MO 43591-6317, +1 (832) 284-6631, lenna38@stokes.biz, http://hartmann.net/, 1, 019b96da-ebda-70b4-af70-492a8cd685cd, 2026-01-07 05:08:08, 2026-01-07 05:08:08))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+    576▕ 
+  ➜ 577▕             return $statement->execute();
+    578▕         });
+    579▕     }
+    580▕ 
+    581▕     /**
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: opd.kode (Connection: sqlite, Database: :memory:, SQL: insert into "opd" ("nama", "singkatan", "alamat", "telepon", "email", "website", "is_active", "id", "updated_at", "created_at") values (Batz, Bins and Jenkins, expedita, 86602 Wiza Light Suite 116
+Gutmannview, NJ 85633, +18457633284, ora.gibson@kris.com, http://www.mertz.org/, 1, 019b96da-ebf5-71c5-9d89-75080a6cda32, 2026-01-07 05:08:08, 2026-01-07 05:08:08))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+    576▕ 
+  ➜ 577▕             return $statement->execute();
+    578▕         });
+    579▕     }
+    580▕ 
+    581▕     /**
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: opd.kode (Connection: sqlite, Database: :memory:, SQL: insert into "opd" ("nama", "singkatan", "alamat", "telepon", "email", "website", "is_active", "id", "updated_at", "created_at") values (Jacobs-Powlowski, eos, 28915 Earline Skyway Suite 297
+Dooleystad, MO 11290-4962, +1-469-365-9130, wilderman.theodore@murray.net, http://www.effertz.info/odit-fuga-suscipit-unde, 1, 019b96da-ec07-7361-a5f0-a85be53d6a19, 2026-01-07 05:08:08, 2026-01-07 05:08:08))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+    576▕ 
+  ➜ 577▕             return $statement->execute();
+    578▕         });
+    579▕     }
+    580▕ 
+    581▕     /**
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+
+  Tests:    3 failed, 2 passed (3 assertions)
+  Duration: 0.64s
+

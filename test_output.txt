@@ -1,0 +1,148 @@
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true… 0.01s  
+
+   FAIL  Tests\Feature\BugReportTest
+  ✓ it preven… 0.20s  
+  ⨯ user can…  0.06s  
+  ⨯ user can…  0.02s  
+  ⨯ user cann… 0.02s  
+  ⨯ admin can… 0.02s  
+
+   FAIL  Tests\Feature\DataRequestTest
+  ⨯ user can…  0.02s  
+  ⨯ admin can… 0.03s  
+  ⨯ user can…  0.01s  
+
+   PASS  Tests\Feature\ExampleTest
+  ✓ the appli… 0.02s  
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "id", "updated_at", "created_at") values (Ms. Gregoria Hane Jr., chloe43@example.net, 2026-01-07 05:06:59, $2y$04$XOYP92RxFaMeAnaYd/m.penP116jGnXy1jHPE8uhsYzgz/pwhvMKO, wxqLExKEV0, 019b96d9-de0f-73a5-a7d3-ab886d8b44ff, 2026-01-07 05:06:59, 2026-01-07 05:06:59))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "id", "updated_at", "created_at") values (Prof. Sydni Gulgowski, kcollier@example.org, 2026-01-07 05:06:59, $2y$04$XOYP92RxFaMeAnaYd/m.penP116jGnXy1jHPE8uhsYzgz/pwhvMKO, eA6CiXDtcC, 019b96d9-de29-73ac-8273-0ad75376065c, 2026-01-07 05:06:59, 2026-01-07 05:06:59))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "id", "updated_at", "created_at") values (Eda Jaskolski, parker.fermin@example.net, 2026-01-07 05:06:59, $2y$04$XOYP92RxFaMeAnaYd/m.penP116jGnXy1jHPE8uhsYzgz/pwhvMKO, S5gOKBWS0m, 019b96d9-de3c-7094-a7ee-1853fefd7379, 2026-01-07 05:06:59, 2026-01-07 05:06:59))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "id", "updated_at", "created_at") values (Queenie Schaefer, allene.smitham@example.net, 2026-01-07 05:06:59, $2y$04$XOYP92RxFaMeAnaYd/m.penP116jGnXy1jHPE8uhsYzgz/pwhvMKO, LgMBqba8Sx, admin, 019b96d9-de50-7281-b817-072ba6c0a6c3, 2026-01-07 05:06:59, 2026-01-07 05:06:59))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "id", "updated_at", "created_at") values (Kaelyn Goldner, ofelia20@example.net, 2026-01-07 05:06:59, $2y$04$XOYP92RxFaMeAnaYd/m.penP116jGnXy1jHPE8uhsYzgz/pwhvMKO, Lv78mEzRZM, 019b96d9-de61-7135-9da1-366186bc3e94, 2026-01-07 05:06:59, 2026-01-07 05:06:59))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "id", "updated_at", "created_at") values (Brooklyn Mitchell, sdoyle@example.com, 2026-01-07 05:06:59, $2y$04$XOYP92RxFaMeAnaYd/m.penP116jGnXy1jHPE8uhsYzgz/pwhvMKO, I7WtzO2MP0, admin, 019b96d9-de7b-72b5-ad59-e047ed32f165, 2026-01-07 05:06:59, 2026-01-07 05:06:59))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "id", "updated_at", "created_at") values (Consuelo Kunde, xharvey@example.com, 2026-01-07 05:06:59, $2y$04$XOYP92RxFaMeAnaYd/m.penP116jGnXy1jHPE8uhsYzgz/pwhvMKO, somBSS7yz1, 019b96d9-de8a-7364-ad3c-30f2f954d94a, 2026-01-07 05:06:59, 2026-01-07 05:06:59))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+
+  Tests:    7 failed, 3 passed (4 assertions)
+  Duration: 0.58s
+

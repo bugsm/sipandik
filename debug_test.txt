@@ -1,0 +1,26 @@
+
+   FAIL  Tests\Feature\BugReportTest
+  Γ¿» user canΓÇª  0.79s  
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ  
+  ΓÇª  QueryException   
+  SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: opd.kode (Connection: sqlite, Database: database/testing.sqlite, SQL: insert into "opd" ("nama", "singkatan", "alamat", "telepon", "email", "website", "is_active", "id", "updated_at", "created_at") values (Moen, Thiel and Jacobs, laboriosam, 64824 Crooks Locks Apt. 218
+South Deanna, FL 96594-1440, 727.961.5833, carroll.sonya@kulas.org, http://www.spinka.com/iure-velit-voluptatem-facere-amet.html, 1, 019b96de-3365-722c-9c1d-33367533a482, 2026-01-07 05:11:43, 2026-01-07 05:11:43))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+    573Γûò             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574Γûò 
+    575Γûò             $this->recordsHaveBeenModified();
+    576Γûò 
+  Γ₧£ 577Γûò             return $statement->execute();
+    578Γûò         });
+    579Γûò     }
+    580Γûò 
+    581Γûò     /**
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:577
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+
+  Tests:    1 failed (0 assertions)
+  Duration: 1.00s
+

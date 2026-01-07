@@ -1,0 +1,83 @@
+
+   FAIL  Tests\Feature\BugReportTest
+  ✓ it preven… 0.19s  
+  ⨯ user can…  0.06s  
+  ⨯ user can…  0.02s  
+  ⨯ user cann… 0.02s  
+  ⨯ admin can… 0.02s  
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "id", "updated_at", "created_at") values (Miss Adriana Dickens, keeling.kyleigh@example.com, 2026-01-07 05:07:16, $2y$04$iEpKl6VrszwS5FV1cvmCi.7/84svGqc5KIBfCpfW/7O5kK92Wb4nW, fTrxFrEGJt, 019b96da-214b-739e-b86c-86b7e0a44a5b, 2026-01-07 05:07:16, 2026-01-07 05:07:16))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "id", "updated_at", "created_at") values (Sammie Rolfson, izabella70@example.com, 2026-01-07 05:07:16, $2y$04$iEpKl6VrszwS5FV1cvmCi.7/84svGqc5KIBfCpfW/7O5kK92Wb4nW, Zh9ccyFQ8s, 019b96da-2164-7327-8ec6-89ade660a61c, 2026-01-07 05:07:16, 2026-01-07 05:07:16))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "id", "updated_at", "created_at") values (Mikel Renner V, annette.bernier@example.com, 2026-01-07 05:07:16, $2y$04$iEpKl6VrszwS5FV1cvmCi.7/84svGqc5KIBfCpfW/7O5kK92Wb4nW, RiqEyEU6k4, 019b96da-2176-7153-8882-be25174efa4b, 2026-01-07 05:07:16, 2026-01-07 05:07:16))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+  ──────────────────  
+  …  QueryException   
+  SQLSTATE[HY000]: General error: 1 no such table: users (Connection: sqlite, Database: :memory:, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "id", "updated_at", "created_at") values (Everardo Erdman, chanel42@example.com, 2026-01-07 05:07:16, $2y$04$iEpKl6VrszwS5FV1cvmCi.7/84svGqc5KIBfCpfW/7O5kK92Wb4nW, i5HP4Z5hOB, admin, 019b96da-2187-71d4-8baf-9bd6470cbdfe, 2026-01-07 05:07:16, 2026-01-07 05:07:16))
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+    567▕             if ($this->pretending()) {
+    568▕                 return true;
+    569▕             }
+    570▕ 
+  ➜ 571▕             $statement = $this->getPdo()->prepare($query);
+    572▕ 
+    573▕             $this->bindValues($statement, $this->prepareBindings($bindings));
+    574▕ 
+    575▕             $this->recordsHaveBeenModified();
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:571
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:820
+
+
+  Tests:    4 failed, 1 passed (2 assertions)
+  Duration: 0.46s
+

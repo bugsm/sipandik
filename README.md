@@ -50,7 +50,7 @@ SIPANDIK adalah platform terintegrasi untuk pelaporan kerentanan/bug pada aplika
 | **Backend** | Laravel 12.x, PHP 8.3+ |
 | **Frontend** | Blade, TailwindCSS, Alpine.js |
 | **Build Tool** | Vite |
-| **Database** | MySQL / SQLite |
+| **Database** | PostgreSQL |
 | **Export** | Maatwebsite Excel, DomPDF |
 | **Testing** | Pest PHP |
 
@@ -62,7 +62,7 @@ SIPANDIK adalah platform terintegrasi untuk pelaporan kerentanan/bug pada aplika
 - PHP >= 8.3
 - Composer
 - Node.js & NPM
-- MySQL atau SQLite
+- PostgreSQL
 
 ### Langkah Instalasi
 
@@ -243,7 +243,7 @@ APP_ENV=production
 APP_DEBUG=false
 APP_URL=https://sipandik.yourdomain. go.id
 
-DB_CONNECTION=mysql
+DB_CONNECTION=pgqsl
 DB_HOST=your-db-host
 DB_DATABASE=sipandik
 DB_USERNAME=your-username
